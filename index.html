@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Flash Cards</title>
+    <link rel="stylesheet" href="style_index.css">
+    <title>Flash Cards | Log inn</title>
 </head>
 <body>
-    <div class="flip_card">
-        <div class="flip_card_inner">
-            <div class="flip_card_front">
-                <p>Hva er Navnet på den verdens største rovfugl?</p>
-
+    <div class="login">
+        <div class="login_inner" id="login_inner">
+            <div class="login_front">
+                <div class="login_wrapper">
+                    <input type="text" placeholder="Username" class="text_input">
+                    <input type="password" placeholder="Password" class="text_input">
+                    <a href="home.html" class="cto">Sign in</a>
+                    <p>Don't have a user account, sign up <input type="button" id="sing_up_btn" class="sing_up_btn" onclick="myFunction()" value="here!"></p>
+                </div>
+                
             </div>
-            <div class="flip_card_back">
-                <p>Hvis man teller kondorer og gribber som rovfugler, er Andeskondoren regnet som verdens største rovfugl.</p>
+            <div class="login_back">
+                <div class="login_wrapper">
+                    <input type="text" placeholder="Username" class="text_input">
+                    <input type="password" placeholder="Password" class="text_input">
+                    <input type="password" placeholder="Re-type Password" class="text_input">
+                    <input type="button" id="sing_up_btn" onclick="myFunction1()">
+                    <input type="submit" placeholder="Create User">
+                </div>
             </div>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
