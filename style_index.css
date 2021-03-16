@@ -86,6 +86,8 @@ p {
     color: #473D3D;
     font-size: 28px;
     font-weight: bold;
+    text-decoration: none;
+    padding-top: 12px;
 }
 
 .cto:hover {
@@ -106,4 +108,17 @@ p input {
     font-weight: bold;
     outline: none;
     cursor: pointer;
+}
+
+.sing_up_btn {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.cto_2 {
+    width: 180px;
+    box-sizing: border-box;
+    padding-bottom: 12px;
 }

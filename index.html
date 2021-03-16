@@ -12,10 +12,10 @@
         <div class="login_inner" id="login_inner">
             <div class="login_front">
                 <div class="login_wrapper">
-                    <input type="text" placeholder="Username" class="text_input">
-                    <input type="password" placeholder="Password" class="text_input">
-                    <a href="home.html" class="cto">Sign in</a>
-                    <p>Don't have a user account, sign up <input type="button" id="sing_up_btn" class="sing_up_btn" onclick="myFunction()" value="here!"></p>
+                    <input type="text" placeholder="Username" class="text_input" id="username">
+                    <input type="password" placeholder="Password" class="text_input" id="password">
+                    <button class="cto" onclick="singIn()">Sign in</button>
+                    <p>Don't have a user account, sign up <input type="button" onclick="myFunction()" value="here!"></p>
                 </div>
                 
             </div>
@@ -24,8 +24,10 @@
                     <input type="text" placeholder="Username" class="text_input">
                     <input type="password" placeholder="Password" class="text_input">
                     <input type="password" placeholder="Re-type Password" class="text_input">
-                    <input type="button" id="sing_up_btn" onclick="myFunction1()">
-                    <input type="submit" placeholder="Create User">
+                    <div class="sing_up_btn">
+                        <input type="button" onclick="myFunction1()" class="cto cto_2" value="Back">
+                        <input type="submit" value="Create User" class="cto cto_2">
+                    </div>
                 </div>
             </div>
         </div>
